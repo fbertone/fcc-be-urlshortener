@@ -1,0 +1,23 @@
+{
+  "name": "fcc-be-urlshortener",
+  "version": "1.0.0",
+  "description": "Free Code Camp API Basejump: URL Shortener",
+  "main": "shortener.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node shortener.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbertone/fcc-be-urlshortener.git"
+  },
+  "author": "Fabrizio Bertone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbertone/fcc-be-urlshortener/issues"
+  },
+  "homepage": "https://github.com/fbertone/fcc-be-urlshortener#readme",
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
+}
