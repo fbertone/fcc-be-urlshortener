@@ -24,7 +24,11 @@ var server = http.createServer(function(req, res) {
     };
 
     try { // I'm codifying the index in base 36 to reduce space
-      data.short_url = 'http://localhost/' +
+      var baseUrl = (
+          (req.connection.encrypted ||
+            req.headers['x-forwarded-proto'] === 'https') ? "https" : "http") +
+        '://' + req.headers.host + '/';
+      data.short_url = baseUrl +
         shortenerdb.addUrl(original, allowInvalid).toString(36);
     } catch (e) {
       data = {
